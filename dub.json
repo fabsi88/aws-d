@@ -1,0 +1,9 @@
+{
+	"name": "aws-d",
+	"description": "Amazon Web Services for D",
+	"copyright": "Copyright © 2014, Fabian Wallentowitz",
+	"authors": ["Fabian Wallentowitz"],
+	"dependencies": {
+		"vibe-d": "~master"
+	}
+}
