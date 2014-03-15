@@ -1,4 +1,4 @@
-module source.common.aws.credentials.ICredentials;
+module aws.credentials.ICredentials;
 
 ///
 interface ICredentials

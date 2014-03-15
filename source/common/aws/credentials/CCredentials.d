@@ -1,6 +1,6 @@
-module source.common.aws.credentials.CCredentials;
+module aws.credentials.CCredentials;
 
-import source.common.aws.credentials.ICredentials;
+import aws.credentials.ICredentials;
 
 ///
 final class CCredentials : ICredentials

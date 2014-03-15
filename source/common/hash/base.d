@@ -16,7 +16,7 @@ Authors: Piotr Szturmaj
 Source: $(PHOBOSSRC std/crypto/hash/_merkledamgard.d)
 */
 
-module source.common.hash.base;
+module crypto.hash.base;
 
 import std.ascii, std.exception, std.range, std.string, std.traits;
 import std.c.string;

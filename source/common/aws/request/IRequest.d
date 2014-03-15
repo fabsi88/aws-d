@@ -1,4 +1,4 @@
-module source.common.aws.request.IRequest;
+module aws.request.IRequest;
 
 ///
 interface IRequest

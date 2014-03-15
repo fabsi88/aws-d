@@ -8,9 +8,9 @@ Authors: Piotr Szturmaj
 Source: $(PHOBOSSRC std/crypto/hash/_hmac.d)
 */
 
-module source.common.mac.hmac;
+module crypto.mac.hmac;
 
-public import source.common.hash.base;
+public import crypto.hash.base;
 
 final class HMAC(H : IIterativeHashFunction) if (is(H : ISaveableIV)) : HashFunction
 {

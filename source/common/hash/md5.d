@@ -8,10 +8,10 @@ Authors: Piotr Szturmaj
 Source: $(PHOBOSSRC std/crypto/hash/_md5.d)
 */
 
-module source.common.hash.md5;
+module crypto.hash.md5;
 
 import std.algorithm, std.bitmanip, std.c.string;
-public import source.common.hash.base;
+public import crypto.hash.base;
 
 private:
 

@@ -1,7 +1,7 @@
-module source.common.aws.client.IAwsClient;
+module aws.client.IAwsClient;
 
-import source.common.aws.credentials.CCredentials;
-import source.common.aws.signature.CSignature;
+import aws.credentials.CCredentials;
+import aws.signature.CSignature;
 
 ///
 interface IAwsClient

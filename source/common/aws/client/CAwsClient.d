@@ -1,8 +1,8 @@
-module source.common.aws.client.CAwsClient;
+module aws.client.CAwsClient;
 
-import source.common.aws.client.IAwsClient;
-import source.common.aws.credentials.CCredentials;
-import source.common.aws.signature.CSignature;
+import aws.client.IAwsClient;
+import aws.credentials.CCredentials;
+import aws.signature.CSignature;
 
 ///
 abstract class CAwsClient : IAwsClient
@@ -94,13 +94,13 @@ enum AwsRegionName{
 	us_gov_west_1="us-gov-west-1"};
 
 enum AwsRegion[string] regions =
-[	us_east_1: AwsRegion(true, true, "ec2.us-east-1.amazonaws.com"),
-	us_west_1: AwsRegion(true, true, "ec2.us-west-1.amazonaws.com"),
-	us_west_2: AwsRegion(true, true, "ec2.us-west-2.amazonaws.com"),
-	eu_west_1: AwsRegion(true, true, "ec2.eu-west-1.amazonaws.com"),
-	ap_northeast_1: AwsRegion(true, true, "ec2.ap-northeast-1.amazonaws.com"),
-	ap_southeast_1: AwsRegion(true, true, "ec2.ap-southeast-1.amazonaws.com"),
-	ap_southeast_2: AwsRegion(true, true, "ec2.ap-southeast-2.amazonaws.com"),
-	sa_east_1: AwsRegion(true, true, "ec2.sa-east-1.amazonaws.com"),
-	cn_north_1: AwsRegion(true, true, "ec2.cn-north-1.amazonaws.com.cn"),
-	us_gov_west_1: AwsRegion(false, true, "ec2.us-gov-west-1.amazonaws.com")];
+[	AwsRegionName.us_east_1: AwsRegion(true, true, "ec2.us-east-1.amazonaws.com"),
+	AwsRegionName.us_west_1: AwsRegion(true, true, "ec2.us-west-1.amazonaws.com"),
+	AwsRegionName.us_west_2: AwsRegion(true, true, "ec2.us-west-2.amazonaws.com"),
+	AwsRegionName.eu_west_1: AwsRegion(true, true, "ec2.eu-west-1.amazonaws.com"),
+	AwsRegionName.ap_northeast_1: AwsRegion(true, true, "ec2.ap-northeast-1.amazonaws.com"),
+	AwsRegionName.ap_southeast_1: AwsRegion(true, true, "ec2.ap-southeast-1.amazonaws.com"),
+	AwsRegionName.ap_southeast_2: AwsRegion(true, true, "ec2.ap-southeast-2.amazonaws.com"),
+	AwsRegionName.sa_east_1: AwsRegion(true, true, "ec2.sa-east-1.amazonaws.com"),
+	AwsRegionName.cn_north_1: AwsRegion(true, true, "ec2.cn-north-1.amazonaws.com.cn"),
+	AwsRegionName.us_gov_west_1: AwsRegion(false, true, "ec2.us-gov-west-1.amazonaws.com")];

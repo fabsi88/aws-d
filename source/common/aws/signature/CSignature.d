@@ -1,8 +1,8 @@
-module source.common.aws.signature.CSignature;
+module aws.signature.CSignature;
 
-import source.common.aws.signature.ISignature;
-import source.common.aws.request.CRequest;
-import source.common.aws.credentials.CCredentials;
+import aws.signature.ISignature;
+import aws.request.CRequest;
+import aws.credentials.CCredentials;
 
 ///
 final class CSignature : ISignature

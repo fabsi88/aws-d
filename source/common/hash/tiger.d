@@ -8,10 +8,10 @@ Authors: Piotr Szturmaj
 Source: $(PHOBOSSRC std/crypto/hash/_tiger.d)
 */
 
-module source.common.hash.tiger;
+module crypto.hash.tiger;
 
 import std.algorithm, std.bitmanip, std.c.string;
-public import source.common.hash.base;
+public import crypto.hash.base;
 
 private:
 

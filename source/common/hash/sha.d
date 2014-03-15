@@ -19,10 +19,10 @@ Authors: Piotr Szturmaj
 Source: $(PHOBOSSRC std/crypto/hash/_sha.d)
 */
 
-module source.common.hash.sha;
+module crypto.hash.sha;
 
 import std.algorithm, std.bitmanip, std.c.string;
-public import source.common.hash.base;
+public import crypto.hash.base;
 
 private:
 
