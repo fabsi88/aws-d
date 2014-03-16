@@ -3,6 +3,7 @@ module aws.client.CAwsClient;
 import aws.client.IAwsClient;
 import aws.credentials.CCredentials;
 import aws.signature.CSignature;
+import aws.request.CRequest;
 
 ///
 abstract class CAwsClient : IAwsClient
@@ -10,6 +11,7 @@ abstract class CAwsClient : IAwsClient
 protected:
 	CCredentials m_credentials = new CCredentials();
 	CSignature m_signature = new CSignature();
+	CRequest m_request = new CRequest();
 	string m_region;
 	
 public:
@@ -41,7 +43,7 @@ public:
 		return m_signature;
 	}
 
-	void setSignature(string _sigVersion, string _algorithm, string _signature = "")
+	void setSignature(SignatureVersion _sigVersion, SignatureAlgorithm _algorithm, string _signature = "")
 	{
 		m_signature.sigVersion = _sigVersion;
 		m_signature.algorithm = _algorithm;
@@ -57,7 +59,7 @@ public:
 	///
 	string getRegion()
 	{
-		return "";
+		return m_region;
 	}
 
 	///
@@ -81,7 +83,7 @@ struct AwsRegion
 	string hostname;
 }
 
-enum AwsRegionName{
+enum AwsRegionName : string{
 	us_east_1="us-east-1",
 	us_west_1="us-west-1",
 	us_west_2="us-west-2",
@@ -105,10 +107,10 @@ enum AwsRegion[string] regions =
 	AwsRegionName.cn_north_1: AwsRegion(true, true, "ec2.cn-north-1.amazonaws.com.cn"),
 	AwsRegionName.us_gov_west_1: AwsRegion(false, true, "ec2.us-gov-west-1.amazonaws.com")];
 
-enum SignatureAlogrithm {
+enum SignatureAlgorithm : string {
 	HmacSHA1="HmacSHA1",
 	HmacSHA256="HmacSHA256"};
 
-enum SignatureVersion {
-	v2=2,
-	v4=4};
+enum SignatureVersion : string {
+	v2="2",
+	v4="4"};

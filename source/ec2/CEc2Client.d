@@ -13,13 +13,31 @@ private:
 
 public:
 
+	///
 	this()
 	{
+		// Set default region
+		setRegion(AwsRegionName.us_east_1);
 
 
 	
 
 
+	}
+
+	///
+	void startInstances(string[] _instanceIds)
+	{
+
+
+
+	}
+
+	///
+	void stopInstances(string[] _instanceIds)
+	{
+		
+		
 	}
 
 }

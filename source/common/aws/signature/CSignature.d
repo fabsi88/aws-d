@@ -3,26 +3,27 @@ module aws.signature.CSignature;
 import aws.signature.ISignature;
 import aws.request.CRequest;
 import aws.credentials.CCredentials;
+import aws.client.CAwsClient;
 
 ///
 final class CSignature : ISignature
 {
 private:
-	string m_sigVersion;
-	string m_algorithm;
+	SignatureVersion m_sigVersion;
+	SignatureAlgorithm m_algorithm;
 	string m_signature;
 
 public:
 	@property 
 	{ 
 		///
-		string sigVersion() const { return m_sigVersion; } 
+		SignatureVersion sigVersion() const { return m_sigVersion; } 
 		///
-		void sigVersion(string _sigVersion) { m_sigVersion = _sigVersion;}
+		void sigVersion(SignatureVersion _sigVersion) { m_sigVersion = _sigVersion;}
 		///
-		string alogrithm() const { return m_algorithm; }
+		SignatureAlgorithm alogrithm() const { return m_algorithm; }
 		///
-		void algorithm(string _algorithm) { m_algorithm = _algorithm;}
+		void algorithm(SignatureAlgorithm _algorithm) { m_algorithm = _algorithm;}
 		///
 		string signature() const { return m_signature; }
 		///
