@@ -104,3 +104,11 @@ enum AwsRegion[string] regions =
 	AwsRegionName.sa_east_1: AwsRegion(true, true, "ec2.sa-east-1.amazonaws.com"),
 	AwsRegionName.cn_north_1: AwsRegion(true, true, "ec2.cn-north-1.amazonaws.com.cn"),
 	AwsRegionName.us_gov_west_1: AwsRegion(false, true, "ec2.us-gov-west-1.amazonaws.com")];
+
+enum SignatureAlogrithm {
+	HmacSHA1="HmacSHA1",
+	HmacSHA256="HmacSHA256"};
+
+enum SignatureVersion {
+	v2=2,
+	v4=4};
