@@ -1,6 +1,6 @@
-module aws.credentials.CCredentials;
+module aws.credentials.ccredentials;
 
-import aws.credentials.ICredentials;
+import aws.credentials.icredentials;
 
 ///
 final class CCredentials : ICredentials

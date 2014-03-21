@@ -1,4 +1,4 @@
-module aws.request.IRequest;
+module aws.request.irequest;
 
 ///
 interface IRequest

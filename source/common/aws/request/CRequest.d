@@ -1,6 +1,6 @@
-module aws.request.CRequest;
+module aws.request.crequest;
 
-import aws.request.IRequest;
+import aws.request.irequest;
 
 ///
 final class CRequest : IRequest

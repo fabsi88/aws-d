@@ -1,9 +1,9 @@
-module aws.client.CAwsClient;
+module aws.client.cawsclient;
 
-import aws.client.IAwsClient;
-import aws.credentials.CCredentials;
-import aws.signature.CSignature;
-import aws.request.CRequest;
+import aws.client.iawsclient;
+import aws.credentials.ccredentials;
+import aws.signature.csignature;
+import aws.request.crequest;
 
 ///
 abstract class CAwsClient : IAwsClient

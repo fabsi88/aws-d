@@ -1,7 +1,7 @@
-module aws.signature.ISignature;
+module aws.signature.isignature;
 
-import aws.request.CRequest;
-import aws.credentials.CCredentials;
+import aws.request.crequest;
+import aws.credentials.ccredentials;
 
 ///
 interface ISignature

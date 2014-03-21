@@ -1,9 +1,9 @@
-module aws.signature.CSignature;
+module aws.signature.csignature;
 
-import aws.signature.ISignature;
-import aws.request.CRequest;
-import aws.credentials.CCredentials;
-import aws.client.CAwsClient;
+import aws.signature.isignature;
+import aws.request.crequest;
+import aws.credentials.ccredentials;
+import aws.client.cawsclient;
 
 ///
 final class CSignature : ISignature

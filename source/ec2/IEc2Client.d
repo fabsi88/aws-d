@@ -1,6 +1,6 @@
-module aws.ec2.IEc2Client;
+module aws.ec2.iec2client;
 
-import aws.client.IAwsClient;
+import aws.client.iawsclient;
 interface IEc2Client : IAwsClient
 {
 }

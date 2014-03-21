@@ -1,9 +1,9 @@
-module aws.ec2.CEc2Client;
+module aws.ec2.cec2client;
 
-import aws.ec2.IEc2Client;
-import aws.client.CAwsClient;
-import aws.credentials.CCredentials;
-import aws.signature.CSignature;
+import aws.ec2.iec2client;
+import aws.client.cawsclient;
+import aws.credentials.ccredentials;
+import aws.signature.csignature;
 
 ///
 class CEc2Client : CAwsClient , IEc2Client
