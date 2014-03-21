@@ -1,3 +1,5 @@
 /aws-d
 /.dub/
 *.userprefs
+app.d
+*.dll
